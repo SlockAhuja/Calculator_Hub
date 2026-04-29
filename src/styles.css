@@ -1,0 +1,179 @@
+﻿:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #0f172a;
+  background: linear-gradient(160deg, #f8fafc, #dbeafe);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header p {
+  margin-top: 8px;
+  color: #334155;
+}
+
+.topNav {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+}
+
+.topNav button {
+  border: 1px solid #94a3b8;
+  border-radius: 10px;
+  padding: 8px 12px;
+  background: white;
+  cursor: pointer;
+}
+
+.topNav .activeTab {
+  background: #dbeafe;
+  border-color: #2563eb;
+}
+
+.search {
+  margin-top: 12px;
+  width: 100%;
+  max-width: 420px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #94a3b8;
+}
+
+.layout {
+  margin-top: 20px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 2fr 1fr;
+}
+
+.panel {
+  margin-top: 20px;
+  background: #ffffffdd;
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
+  padding: 14px;
+  backdrop-filter: blur(6px);
+}
+
+.widePanel {
+  margin-top: 0;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}
+
+.gridCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.calculatorButton {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 8px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.calculatorButton.active {
+  border-color: #2563eb;
+  background: #dbeafe;
+}
+
+.calculatorButton small {
+  display: block;
+  color: #475569;
+  margin-top: 3px;
+}
+
+.field {
+  display: block;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.field input {
+  display: block;
+  margin-top: 6px;
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #94a3b8;
+  border-radius: 10px;
+}
+
+button {
+  font: inherit;
+}
+
+.primary {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 11px;
+  color: white;
+  background: #1d4ed8;
+  cursor: pointer;
+}
+
+.ghost {
+  border: 1px solid #94a3b8;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: white;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+.categoryBlock {
+  margin-top: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #cbd5e1;
+}
+
+@media (max-width: 960px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .topNav {
+    flex-wrap: wrap;
+  }
+}
